@@ -1,0 +1,601 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300&display=swap");
+.marca em, .marca i {
+  font-style: normal;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.title {
+  color: #ec7c24;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 40px;
+  letter-spacing: 4px;
+  font-weight: bolder;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 50px 0;
+}
+
+.title-class {
+  color: #e4067d;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.pilates p,
+.reiki p,
+.reflex p,
+.shiatsu p {
+  text-align: center;
+  color: #e4067d;
+  font-size: 17px;
+  padding: 35px 0;
+  margin: 0;
+}
+
+.pilates a,
+.reiki a,
+.reflex a,
+.shiatsu a {
+  color: #ec7c24;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+.menu {
+  border-bottom: 1px #ec7c24 solid;
+  background-color: white;
+  z-index: 10;
+}
+
+.marca em {
+  color: #ec7c24;
+}
+
+.marca i {
+  color: #e4067d;
+}
+
+.marca:hover {
+  opacity: 0.5;
+}
+
+.menu li a {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  color: #ec7c24 !important;
+}
+
+.menu li a:hover {
+  color: #e4067d !important;
+  background-color: #f6f0ed !important;
+}
+
+.home {
+  background-color: #f6f0ed;
+}
+
+.home-description h1 {
+  padding-top: 100px;
+  text-align: center;
+  color: #ec7c24;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bolder;
+  opacity: 0.75;
+}
+
+.home-logo-genki {
+  text-align: center;
+  margin: 75px 0;
+}
+
+.logo-genki {
+  width: 500px;
+  height: 250px;
+  opacity: 1;
+}
+
+.logo-genki:hover {
+  opacity: 0.75;
+}
+
+.home-services {
+  padding-bottom: 50px;
+  width: 100%;
+  margin: 0 0;
+}
+
+.home-services img {
+  width: 75px;
+  height: 75px;
+  opacity: 0.5;
+}
+
+.home-services p {
+  text-align: center;
+  color: #ec7c24;
+  font-size: 19px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bolder;
+  padding-top: 25px;
+}
+
+.home-services a:hover {
+  text-decoration: none !important;
+}
+
+.home-services a p:hover {
+  color: #e4067d !important;
+}
+
+/*Nosotros*/
+.nosotros {
+  padding: 50px 0 0 0;
+}
+
+.nosotros img {
+  width: 540px;
+  height: 350px;
+  border: 1px solid #e4067d;
+}
+
+.nosotros p {
+  color: #e4067d;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.pilates-photos img {
+  position: relative;
+}
+
+.pilates-photos img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 1s ease 0.1s;
+  transition: all 1s ease 0.1s;
+  z-index: 1;
+}
+
+.zoom p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 35px 0;
+}
+
+.reiki,
+.reflex {
+  background-color: #f6f0ed;
+  padding: 35px 0 0 0;
+}
+
+.shiatsu {
+  padding: 35px 0 0 0;
+}
+
+.pilates a:hover,
+.reiki a:hover,
+.reflex a:hover,
+.shiatsu a:hover {
+  color: #aabbb5;
+}
+
+.table-genki {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+table {
+  width: 70%;
+  border: 2px solid #aabbb5;
+  border-collapse: collapse;
+  display: table;
+}
+
+th,
+td {
+  width: 10%;
+  text-align: center;
+  vertical-align: auto;
+  border: 1px solid #aabbb5;
+}
+
+th {
+  color: white;
+  font-weight: bolder;
+  text-transform: uppercase;
+  background-color: #e4067d;
+}
+
+.horario {
+  color: white;
+  font-weight: bolder;
+  text-transform: uppercase;
+  background-color: #e4067d;
+}
+
+.par {
+  color: #aabbb5;
+}
+
+.impar {
+  background-color: #f6c0bd;
+  color: white;
+}
+
+.location h1 {
+  color: #e4067d;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.location p {
+  color: #e4067d;
+  font-size: 23px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 50px;
+}
+
+.map {
+  height: 400px;
+}
+
+label {
+  color: #e4067d;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button-send {
+  color: #e4067d !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px #cfcbc6 solid;
+  background-color: #cfcbc6;
+}
+
+.button-send:hover {
+  color: #ec7c24 !important;
+  background-color: #f6f0ed;
+}
+
+footer {
+  border-top: 1px solid #ec7c24;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+  margin: 0 20px 20px 20px;
+}
+
+footer p {
+  text-align: center;
+  color: #ec7c24;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.sm {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 575px) {
+  .home-description h1 {
+    padding-top: 75px;
+    font-size: 23px;
+  }
+  .home-loto {
+    display: none;
+  }
+  .home-services {
+    padding-bottom: 0;
+  }
+  .home-services img {
+    width: 60px;
+    height: 60px;
+  }
+  .home-services p {
+    font-size: 13px;
+    padding-top: 0;
+  }
+  .nosotros {
+    padding: 15px 0;
+  }
+  .nosotros img {
+    width: 330px;
+    height: 250px;
+  }
+  .nosotros p {
+    font-size: 13px;
+  }
+  .title {
+    font-size: 23px;
+    margin: 20px 0;
+  }
+  .title-class {
+    font-size: 19px;
+  }
+  .pilates p {
+    font-size: 13px;
+    padding: 15px 0;
+  }
+  .pilates a {
+    color: #ec7c24;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .zoom p {
+    font-size: 15px;
+    padding: 20px 0;
+  }
+  .reiki,
+  .reflex {
+    padding: 15px 0 0 0;
+  }
+  .reiki p,
+  .reflex p {
+    font-size: 13px;
+    padding: 15px 0;
+  }
+  .shiatsu {
+    padding: 15px 0 0 0;
+  }
+  .shiatsu p {
+    font-size: 13px;
+    padding: 15px 0;
+  }
+  table {
+    display: none;
+  }
+  .location h1 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+  }
+  .location p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .map {
+    margin: 0 auto;
+    width: 80%;
+    height: 250px;
+  }
+  footer img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 20px 10px;
+  }
+  footer p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .home-description h1 {
+    padding-top: 75px;
+    font-size: 23px;
+  }
+  .home-loto {
+    display: none;
+  }
+  .home-services {
+    padding-bottom: 0;
+  }
+  .home-services img {
+    width: 60px;
+    height: 60px;
+  }
+  .home-services p {
+    font-size: 13px;
+    padding-top: 0;
+  }
+  .nosotros {
+    padding: 15px 0;
+  }
+  .nosotros img {
+    width: 510px;
+    height: 300px;
+  }
+  .nosotros p {
+    font-size: 13px;
+  }
+  .title {
+    font-size: 23px;
+    margin: 20px 0;
+  }
+  .title-class {
+    font-size: 19px;
+  }
+  .pilates p {
+    font-size: 13px;
+    padding: 15px 0;
+  }
+  .pilates a {
+    color: #ec7c24;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .zoom p {
+    font-size: 15px;
+    padding: 20px 0;
+  }
+  .reiki,
+  .reflex {
+    padding: 15px 0 0 0;
+  }
+  .reiki p,
+  .reflex p {
+    font-size: 13px;
+    padding: 15px 0;
+  }
+  .shiatsu {
+    padding: 15px 0 0 0;
+  }
+  .shiatsu p {
+    font-size: 13px;
+    padding: 15px 0;
+  }
+  table {
+    display: none;
+  }
+  .location h1 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+  }
+  .location p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .map {
+    margin: 0 auto;
+    width: 80%;
+    height: 300px;
+  }
+  footer img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 20px 10px;
+  }
+  footer p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-description h1 {
+    padding-top: 75px;
+    font-size: 23px;
+  }
+  .home-loto {
+    margin: 20px 0;
+  }
+  .loto {
+    width: 300px;
+    height: 150px;
+  }
+  .home-services {
+    padding-bottom: 0;
+  }
+  .home-services img {
+    width: 60px;
+    height: 60px;
+  }
+  .home-services p {
+    font-size: 13px;
+    padding-top: 20px;
+  }
+  .nosotros {
+    padding: 15px 0;
+  }
+  .nosotros img {
+    width: 330px;
+    height: 240px;
+  }
+  .nosotros p {
+    font-size: 12px;
+    margin: 0;
+  }
+  .title {
+    font-size: 23px;
+    margin: 20px 0;
+  }
+  .title-class {
+    font-size: 20px;
+  }
+  .pilates p {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+  .pilates a {
+    color: #ec7c24;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .zoom p {
+    font-size: 14px;
+    padding: 20px 0;
+  }
+  .reiki,
+  .reflex {
+    padding: 15px 0 0 0;
+  }
+  .reiki p,
+  .reflex p {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+  .shiatsu {
+    padding: 15px 0 0 0;
+  }
+  .shiatsu p {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+  .location h1 {
+    font-size: 25px;
+    margin: 30px 0 20px 0;
+  }
+  .location p {
+    font-size: 15px;
+    line-height: 35px;
+  }
+  .map {
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+  }
+  footer img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 20px 10px;
+  }
+  footer p {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

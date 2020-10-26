@@ -1,0 +1,657 @@
+@import 'colors';
+@import 'fonts';
+@import 'extends';
+
+body {
+    font-family: $font-jost;
+}
+
+//Menú
+
+.menu {
+    border-bottom: 1px $border-color-orange solid;
+    background-color: $background-color-white;
+    z-index: 10;
+}
+
+.marca em {
+    color: $font-color-orange;
+    @extend %brand-style;
+}
+
+.marca i {
+    color: $font-color-pink;
+    @extend %brand-style;
+}
+
+.marca:hover {
+    opacity: 0.5;
+}
+
+.menu li a {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    color: $font-color-orange !important;
+}
+
+.menu li a:hover {
+    color: $font-color-pink !important;
+    background-color: $background-color-grey !important;
+}
+
+//Inicio
+
+.home {
+    background-color: $background-color-grey;
+}
+
+.home-description h1 {
+    padding-top: 100px;
+    text-align: center;
+    color: $font-color-orange;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    opacity: 0.75;
+}
+
+.home-logo-genki {
+    text-align: center;
+    margin: 75px 0;
+}
+
+.logo-genki {
+    width: 500px;
+    height: 250px;
+    opacity: 1;
+}
+
+.logo-genki:hover {
+    opacity: 0.75;
+}
+
+.home-services {
+    padding-bottom: 50px;
+    width: 100%;
+    margin: 0 0;
+}
+
+.home-services img {
+    width: 75px;
+    height: 75px;
+    opacity: 0.5;
+}
+
+.home-services p {
+    text-align: center;
+    color: $font-color-orange;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    padding-top: 25px;
+}
+
+.home-services a:hover {
+    text-decoration: none !important;
+}
+
+.home-services a p:hover {
+    color: $font-color-pink !important;
+}
+
+//Nosotros
+
+/*Nosotros*/
+
+.nosotros {
+    padding: 50px 0 0 0;
+}
+
+.nosotros img {
+    width: 540px;
+    height: 350px;
+    border: 1px solid $border-color-pink;
+}
+
+.nosotros p {
+    color: $font-color-pink;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+//Títulos
+
+.title {
+    @extend %titles;
+}
+
+//Clases y servicios
+
+.title-class {
+    @extend %title-class;
+}
+
+.pilates-photos img {
+    position: relative;
+}
+
+.pilates-photos img:hover {
+    transform: scale(1.5);
+    transition: all 1s ease 0.1s;
+    z-index: 1;
+}
+
+.zoom p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 35px 0;
+}
+
+.reiki,
+.reflex {
+    background-color: $background-color-grey;
+    padding: 35px 0 0 0;
+}
+
+.shiatsu {
+    padding: 35px 0 0 0;
+}
+
+.pilates p,
+.reiki p,
+.reflex p,
+.shiatsu p {
+    @extend %p-class;
+}
+
+.pilates a,
+.reiki a,
+.reflex a,
+.shiatsu a {
+    @extend %a-class;
+}
+
+.pilates a:hover,
+.reiki a:hover,
+.reflex a:hover,
+.shiatsu a:hover {
+    color: $hover-color-grey;
+}
+
+//Horarios
+
+.table-genki {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    width: 70%;
+    border: 2px solid $border-color-grey;
+    border-collapse: collapse;
+    display: table;
+}
+
+th,
+td {
+    width: 10%;
+    text-align: center;
+    vertical-align: auto;
+    border: 1px solid $border-color-grey;
+}
+
+th {
+    color: $font-color-white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: $background-color-pink;
+}
+
+.horario {
+    color: $font-color-white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: $background-color-pink;
+}
+
+.par {
+    color: $font-color-dark-grey;
+}
+
+.impar {
+    background-color: $background-color-light-pink;
+    color: $font-color-white;
+}
+
+//Dónde estamos
+
+.location h1 {
+    color: $font-color-pink;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.location p {
+    color: $font-color-pink;
+    font-size: 23px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+}
+
+.map {
+    height: 400px;
+}
+
+//Contacto
+
+label {
+    color: $font-color-pink;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.button-send {
+    color: $font-color-pink !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px #cfcbc6 solid;
+    background-color: #cfcbc6;
+}
+
+.button-send:hover {
+    color: $font-color-orange !important;
+    background-color: $background-color-grey;
+}
+
+//Footer
+
+footer {
+    border-top: 1px solid $border-color-orange;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+    margin: 0 20px 20px 20px;
+}
+
+footer p {
+    text-align: center;
+    color: $font-color-orange;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.sm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+//Media Query
+
+//Mobile
+
+@media (max-width: 575px) {
+
+    .home-description h1 {
+        padding-top: 75px;
+        font-size: 23px;
+    }
+
+    .home-loto {
+        display: none;
+    }
+
+    .home-services {
+        padding-bottom: 0;
+    }
+
+    .home-services img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .home-services p {
+        font-size: 13px;
+        padding-top: 0;
+    }
+
+    .nosotros {
+        padding: 15px 0;
+    }
+
+    .nosotros img {
+        width: 330px;
+        height: 250px;
+    }
+
+    .nosotros p {
+        font-size: 13px;
+    }
+
+    .title {
+        font-size: 23px;
+        margin: 20px 0;
+    }
+
+    .title-class {
+        font-size: 19px;
+    }
+
+    .pilates p {
+        font-size: 13px;
+        padding: 15px 0;
+    }
+
+    .pilates a {
+        color: $font-color-orange;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .zoom p {
+        font-size: 15px;
+        padding: 20px 0;
+    }
+
+    .reiki,
+    .reflex {
+        padding: 15px 0 0 0;
+    }
+
+    .reiki p,
+    .reflex p {
+        font-size: 13px;
+        padding: 15px 0;
+    }
+
+    .shiatsu {
+        padding: 15px 0 0 0;
+    }
+
+    .shiatsu p {
+        font-size: 13px;
+        padding: 15px 0;
+    }
+
+    table {
+        display: none;
+    }
+
+    .location h1 {
+        font-size: 20px;
+        margin: 0 0 20px 0;
+    }
+
+    .location p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .map {
+        margin: 0 auto;
+        width: 80%;
+        height: 250px;
+    }
+
+    footer img {
+        width: 30px;
+        height: 30px;
+        margin: 0 10px 20px 10px;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+}
+
+//Mobile Landscape
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .home-description h1 {
+        padding-top: 75px;
+        font-size: 23px;
+    }
+
+    .home-loto {
+        display: none;
+    }
+
+    .home-services {
+        padding-bottom: 0;
+    }
+
+    .home-services img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .home-services p {
+        font-size: 13px;
+        padding-top: 0;
+    }
+
+    .nosotros {
+        padding: 15px 0;
+    }
+
+    .nosotros img {
+        width: 510px;
+        height: 300px;
+    }
+
+    .nosotros p {
+        font-size: 13px;
+    }
+
+    .title {
+        font-size: 23px;
+        margin: 20px 0;
+    }
+
+    .title-class {
+        font-size: 19px;
+    }
+
+    .pilates p {
+        font-size: 13px;
+        padding: 15px 0;
+    }
+
+    .pilates a {
+        color: $font-color-orange;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .zoom p {
+        font-size: 15px;
+        padding: 20px 0;
+    }
+
+    .reiki,
+    .reflex {
+        padding: 15px 0 0 0;
+    }
+
+    .reiki p,
+    .reflex p {
+        font-size: 13px;
+        padding: 15px 0;
+    }
+
+    .shiatsu {
+        padding: 15px 0 0 0;
+    }
+
+    .shiatsu p {
+        font-size: 13px;
+        padding: 15px 0;
+    }
+
+    table {
+        display: none;
+    }
+
+    .location h1 {
+        font-size: 20px;
+        margin: 0 0 20px 0;
+    }
+
+    .location p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .map {
+        margin: 0 auto;
+        width: 80%;
+        height: 300px;
+    }
+
+    footer img {
+        width: 30px;
+        height: 30px;
+        margin: 0 10px 20px 10px;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+}
+
+//Tablet
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .home-description h1 {
+        padding-top: 75px;
+        font-size: 23px;
+    }
+
+    .home-loto {
+        margin: 20px 0;
+    }
+
+    .loto {
+        width: 300px;
+        height: 150px;
+    }
+
+    .home-services {
+        padding-bottom: 0;
+    }
+
+    .home-services img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .home-services p {
+        font-size: 13px;
+        padding-top: 20px;
+    }
+
+    .nosotros {
+        padding: 15px 0;
+    }
+
+    .nosotros img {
+        width: 330px;
+        height: 240px;
+    }
+
+    .nosotros p {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .title {
+        font-size: 23px;
+        margin: 20px 0;
+    }
+
+    .title-class {
+        font-size: 20px;
+    }
+
+    .pilates p {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    .pilates a {
+        color: $font-color-orange;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .zoom p {
+        font-size: 14px;
+        padding: 20px 0;
+    }
+
+    .reiki,
+    .reflex {
+        padding: 15px 0 0 0;
+    }
+
+    .reiki p,
+    .reflex p {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    .shiatsu {
+        padding: 15px 0 0 0;
+    }
+
+    .shiatsu p {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    .location h1 {
+        font-size: 25px;
+        margin: 30px 0 20px 0;
+    }
+
+    .location p {
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+    .map {
+        margin: 0 auto;
+        width: 100%;
+        height: 300px;
+    }
+
+    footer img {
+        width: 30px;
+        height: 30px;
+        margin: 0 10px 20px 10px;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+}
