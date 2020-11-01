@@ -203,56 +203,6 @@ body {
   color: #aabbb5;
 }
 
-.table-genki {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-table {
-  width: 70%;
-  border: 2px solid #aabbb5;
-  border-collapse: collapse;
-  display: table;
-}
-
-th,
-td {
-  width: 10%;
-  text-align: center;
-  vertical-align: auto;
-  border: 1px solid #aabbb5;
-}
-
-th {
-  color: white;
-  font-weight: bolder;
-  text-transform: uppercase;
-  background-color: #e4067d;
-}
-
-.horario {
-  color: white;
-  font-weight: bolder;
-  text-transform: uppercase;
-  background-color: #e4067d;
-}
-
-.par {
-  color: #aabbb5;
-}
-
-.impar {
-  background-color: #f6c0bd;
-  color: white;
-}
-
 .location h1 {
   color: #e4067d;
   text-transform: uppercase;
@@ -329,7 +279,7 @@ footer p {
     padding-top: 75px;
     font-size: 23px;
   }
-  .home-loto {
+  .home-logo-genki {
     display: none;
   }
   .home-services {
@@ -389,9 +339,6 @@ footer p {
     font-size: 13px;
     padding: 15px 0;
   }
-  table {
-    display: none;
-  }
   .location h1 {
     font-size: 20px;
     margin: 0 0 20px 0;
@@ -420,7 +367,7 @@ footer p {
     padding-top: 75px;
     font-size: 23px;
   }
-  .home-loto {
+  .home-logo-genki {
     display: none;
   }
   .home-services {
@@ -480,9 +427,6 @@ footer p {
     font-size: 13px;
     padding: 15px 0;
   }
-  table {
-    display: none;
-  }
   .location h1 {
     font-size: 20px;
     margin: 0 0 20px 0;
@@ -511,10 +455,10 @@ footer p {
     padding-top: 75px;
     font-size: 23px;
   }
-  .home-loto {
+  .home-logo-genki {
     margin: 20px 0;
   }
-  .loto {
+  .logo-genki {
     width: 300px;
     height: 150px;
   }
