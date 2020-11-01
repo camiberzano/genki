@@ -328,6 +328,10 @@ footer p {
         font-weight: bold;
     }
 
+    .pilates img {
+        height: 500px;
+    }
+
     .zoom p {
         font-size: 15px;
         padding: 15px 0;
@@ -443,6 +447,11 @@ footer p {
         color: $font-color-orange;
         text-decoration: none;
         font-weight: bold;
+    }
+
+    .pilates img {
+        height: 500px;
+        width: 250px;
     }
 
     .zoom p {
@@ -567,7 +576,7 @@ footer p {
         text-decoration: none;
         font-weight: bold;
     }
-
+    
     .zoom p {
         font-size: 14px;
         padding: 15px 0;
