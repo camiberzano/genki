@@ -155,14 +155,13 @@ body {
 
 .nosotros img {
   width: 540px;
-  height: 350px;
+  height: 400px;
   border: 1px solid #e4067d;
 }
 
 .nosotros p {
   color: #e4067d;
   font-size: 16px;
-  font-weight: bold;
   letter-spacing: 1px;
   text-align: justify;
 }
@@ -181,8 +180,6 @@ body {
 
 .zoom p {
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 20px;
   padding: 35px 0;
 }
 
@@ -321,7 +318,7 @@ footer p {
   }
   .zoom p {
     font-size: 15px;
-    padding: 20px 0;
+    padding: 15px 0;
   }
   .reiki,
   .reflex {
@@ -409,7 +406,7 @@ footer p {
   }
   .zoom p {
     font-size: 15px;
-    padding: 20px 0;
+    padding: 15px 0;
   }
   .reiki,
   .reflex {
@@ -502,7 +499,7 @@ footer p {
   }
   .zoom p {
     font-size: 14px;
-    padding: 20px 0;
+    padding: 15px 0;
   }
   .reiki,
   .reflex {
