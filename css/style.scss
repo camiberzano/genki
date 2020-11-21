@@ -2,6 +2,11 @@
 @import 'fonts';
 @import 'extends';
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: $font-jost;
 }
@@ -56,6 +61,8 @@ body {
     letter-spacing: 5px;
     font-weight: bolder;
     opacity: 0.75;
+    animation-name: animation-text;
+    animation-duration: 3s;
 }
 
 .home-logo-genki {
@@ -67,10 +74,8 @@ body {
     width: 500px;
     height: 250px;
     opacity: 1;
-}
-
-.logo-genki:hover {
-    opacity: 0.75;
+    animation-name: animation-genki;
+    animation-duration: 5s;
 }
 
 .home-services {
@@ -83,6 +88,8 @@ body {
     width: 75px;
     height: 75px;
     opacity: 0.5;
+    animation-name: animation-icons;
+    animation-duration: 3s;
 }
 
 .home-services p {
@@ -93,6 +100,8 @@ body {
     letter-spacing: 5px;
     font-weight: bolder;
     padding-top: 25px;
+    animation-name: animation-text;
+    animation-duration: 5s;
 }
 
 .home-services a:hover {
@@ -101,6 +110,16 @@ body {
 
 .home-services a p:hover {
     color: $font-color-pink !important;
+}
+
+@keyframes animation-genki {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes animation-text {
+    from {color: $font-color-pink;}
+    to {color: $font-color-orange;}
 }
 
 //Nosotros
@@ -232,11 +251,11 @@ label {
 //Whatsapp
 
 .whatsapp {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 25px;
+    right: 25px;
 }
 
 //Footer

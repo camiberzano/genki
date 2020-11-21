@@ -24,7 +24,7 @@
 
     <!-- Mi CSS -->
 
-    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Font -->
 
@@ -116,15 +116,15 @@
 
         <div class="container">
             <div class="row home-services justify-content-center">
-                <img src="icons/estera.svg" alt="" class="col-md-1">
+                <img src="images/estera.svg" alt="" class="col-md-1">
                 <a href="#Pilates" class="col-md-3">
                     <p>Pilates</p>
                 </a>
-                <img src="icons/reiki.svg" alt="" class="col-md-1">
+                <img src="images/reiki.svg" alt="" class="col-md-1">
                 <a href="#Reiki" class="col-md-3">
                     <p>Reiki</p>
                 </a>
-                <img src="icons/shiatsu.svg" alt="" class="col-md-1">
+                <img src="images/shiatsu.svg" alt="" class="col-md-1">
                 <a href="#Shiatsu" class="col-md-3">
                     <p>Shiatsu</p>
                 </a>
@@ -372,33 +372,24 @@
 
         <div class="container">
 
-            <form method=”post” name=”contactform” action=”contact-form-handler.php” class="form">
+            <form method="post" action="contact.php" class="form">
                 <div class="form-group">
-                    <label for="name">Nombre</label>
-                    <input type="text" class="form-control" id="name" placeholder="Nombre" name="name">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Nombre" name="nombre" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="Email" placeholder="nombre@ejemplo.com" name="email">
+                    <input type="email" class="form-control" placeholder="nombre@ejemplo.com" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="phone">Teléfono</label>
-                    <input type="number" class="form-control" id="phone" placeholder="Teléfono" name="phone">
+                    <label for="telefono">Teléfono</label>
+                    <input type="number" class="form-control" placeholder="Teléfono" name="telefono" required>
                 </div>
                 <div class="form-group">
-                    <label for="Motivo">Motivo de su consulta</label>
-                    <select class="form-control" id="Motivo" name="motivo">
-                        <option selected>Seleccione una opción</option>
-                        <option value="Clases">Clases</option>
-                        <option value="Sercicios">Servicios</option>
-                        <option value="Otras">Otras</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="Comentarios">Comentarios</label>
-                    <textarea class="form-control" id="comments"
-                        placeholder="Por favor, dejenos sus comentarios y nos pondremos en contacto con usted a la brevedad"
-                        rows="3" name="consulta"></textarea>
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea class="form-control"
+                        placeholder="Por favor, dejenos su mensaje y nos pondremos en contacto con usted a la brevedad"
+                        rows="3" name="mensaje" required></textarea>
                 </div>
                 <button type="submit" class="btn  button-send" value="submit">Enviar</button>
             </form>
@@ -413,7 +404,7 @@
 
     <!-- Whatsapp Button-->
 
-    <a href="https://wa.me/5491169136455" target="_blank"><img src="icons/whatsapp.svg" alt="" class="whatsapp"></a>
+    <a href="https://wa.me/5491132659400" target="_blank"><img src="images/whatsapp.svg" alt="" class="whatsapp"></a>
 
     <!-- Footer -->
 
@@ -422,12 +413,12 @@
         <div class="container justify-content-center">
             <p> Seguinos en redes</p>
             <div class="sm">
-                <a href="https://www.facebook.com/pilatesgenki/" target="_blank"> <img src="icons/facebook.svg" alt="">
+                <a href="https://www.facebook.com/pilatesgenki/" target="_blank"> <img src="images/facebook.svg" alt="">
                 </a>
-                <a href="https://www.instagram.com/genkipilates_ok/" target="_blank"> <img src="icons/instagram.svg"
+                <a href="https://www.instagram.com/genkipilates_ok/" target="_blank"> <img src="images/instagram.svg"
                         alt=""> </a>
                 <a href="https://www.youtube.com/channel/UCdpk1zahTXjpFCASRkf6y4w/videos" target="_blank"> <img
-                        src="icons/youtube.svg" alt=""> </a>
+                        src="images/youtube.svg" alt=""> </a>
             </div>
         </div>
 
