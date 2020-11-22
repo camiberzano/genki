@@ -92,6 +92,16 @@ body {
   background-color: #f6f0ed !important;
 }
 
+.ancla-i {
+  padding-top: 90px;
+  margin-top: -50px;
+}
+
+.ancla-ii {
+  padding-top: 75px;
+  margin-top: -75px;
+}
+
 .home {
   background-color: #f6f0ed;
 }
@@ -201,10 +211,6 @@ body {
 }
 
 /*Nosotros*/
-.nosotros {
-  padding: 50px 0 0 0;
-}
-
 .nosotros img {
   width: 540px;
   height: 400px;
@@ -332,6 +338,9 @@ footer p {
 }
 
 @media (max-width: 575px) {
+  .ancla-i {
+    padding-top: 0;
+  }
   .home-description h1 {
     padding-top: 75px;
     font-size: 23px;
@@ -349,9 +358,6 @@ footer p {
   .home-services p {
     font-size: 13px;
     padding-top: 0;
-  }
-  .nosotros {
-    padding: 15px 0;
   }
   .nosotros img {
     width: 330px;
@@ -424,9 +430,16 @@ footer p {
   footer p {
     font-size: 20px;
   }
+  .foto-ocultar {
+    display: none;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+  .ancla-i {
+    padding-top: 20px;
+    margin-top: -20px;
+  }
   .home-description h1 {
     padding-top: 75px;
     font-size: 23px;
@@ -444,9 +457,6 @@ footer p {
   .home-services p {
     font-size: 13px;
     padding-top: 0;
-  }
-  .nosotros {
-    padding: 15px 0;
   }
   .nosotros img {
     width: 510px;
@@ -520,9 +530,15 @@ footer p {
   footer p {
     font-size: 20px;
   }
+  .foto-ocultar {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .ancla-i {
+    padding-top: 0;
+  }
   .home-description h1 {
     padding-top: 75px;
     font-size: 23px;
@@ -544,9 +560,6 @@ footer p {
   .home-services p {
     font-size: 13px;
     padding-top: 20px;
-  }
-  .nosotros {
-    padding: 15px 0;
   }
   .nosotros img {
     width: 330px;

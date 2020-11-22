@@ -46,6 +46,16 @@ body {
     background-color: $background-color-grey !important;
 }
 
+.ancla-i {
+    padding-top: 90px;
+    margin-top: -50px;
+}
+
+.ancla-ii {
+    padding-top: 75px;
+    margin-top: -75px;
+}
+
 //Inicio
 
 .home {
@@ -113,23 +123,28 @@ body {
 }
 
 @keyframes animation-genki {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes animation-text {
-    from {color: $font-color-pink;}
-    to {color: $font-color-orange;}
+    from {
+        color: $font-color-pink;
+    }
+
+    to {
+        color: $font-color-orange;
+    }
 }
 
 //Nosotros
 
 /*Nosotros*/
-
-.nosotros {
-
-    padding: 50px 0 0 0;
-}
 
 .nosotros img {
     width: 540px;
@@ -291,6 +306,10 @@ footer p {
 
 @media (max-width: 575px) {
 
+    .ancla-i {
+        padding-top: 0
+    }
+    
     .home-description h1 {
         padding-top: 75px;
         font-size: 23px;
@@ -312,10 +331,6 @@ footer p {
     .home-services p {
         font-size: 13px;
         padding-top: 0;
-    }
-
-    .nosotros {
-        padding: 15px 0;
     }
 
     .nosotros img {
@@ -406,11 +421,20 @@ footer p {
     footer p {
         font-size: 20px;
     }
+
+    .foto-ocultar {
+        display: none;
+    }
 }
 
 //Mobile Landscape
 
 @media (min-width: 576px) and (max-width: 767px) {
+
+    .ancla-i {
+        padding-top: 20px;
+        margin-top: -20px;
+    }
 
     .home-description h1 {
         padding-top: 75px;
@@ -433,10 +457,6 @@ footer p {
     .home-services p {
         font-size: 13px;
         padding-top: 0;
-    }
-
-    .nosotros {
-        padding: 15px 0;
     }
 
     .nosotros img {
@@ -528,11 +548,19 @@ footer p {
     footer p {
         font-size: 20px;
     }
+
+    .foto-ocultar {
+        display: none;
+    }
 }
 
 //Tablet
 
 @media (min-width: 768px) and (max-width: 991px) {
+    
+    .ancla-i {
+        padding-top: 0;
+    }
 
     .home-description h1 {
         padding-top: 75px;
@@ -560,10 +588,6 @@ footer p {
     .home-services p {
         font-size: 13px;
         padding-top: 20px;
-    }
-
-    .nosotros {
-        padding: 15px 0;
     }
 
     .nosotros img {
@@ -595,7 +619,7 @@ footer p {
         text-decoration: none;
         font-weight: bold;
     }
-    
+
     .zoom p {
         font-size: 14px;
         padding: 15px 0;

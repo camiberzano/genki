@@ -1,15 +1,46 @@
 <?php
-$myemail = 'camila.berzano@gmail.com'
-$nombre = $_POST['nombre'];
-$email = $_POST['email'];
-$telefono = $_POST['telefono'];
-$mensaje = $_POST['mensaje'];
 
-$to = $myemail;
-$email_subject = "Nuevo mensaje: $subject";
-$email_body = "Haz recibido un nuevo mensaje. \n Nombre: $nombre \n E-Mail: $email \n Teléfono: $telefono \n Mensaje: \n $mensaje"
-$header = "From: $email";
+include("Mailer/src/PHPMailer.php");
 
-mail($to, $email_subject, $email_body, $header);
-echo "El mensaje se ha enviado correctamente.";
+$mail = new PHPMailer();
+
+try {
+
+    $emailto = $_POST["email"];
+    $subject = "Nueva consulta en la página";
+    $name = $_POST["name"];
+    $phone = $_POST["phone"];
+    $bodyemail = $_POST["message"];
+    $fromemail = "consultas@genkipilates.com.ar";
+    $fromname = "Genki Pilates";
+    $host = "mail.genkipilates.com.ar";
+    $port = "465";
+    $SMTPAuth = "login";
+    $SMTPSecure = "SSL";
+    $password = "Lyz839JrUM8e";
+
+    $mail->isSMTP();
+    $mail->SMTPDebug = 0;
+    $mail->Host = $host;
+    $mail->Port = $port;
+    $mail->SMTPAuth = $SMTPAuth;
+    $mail->SMTPSecure = $SMTPSecure;
+    $mail->Username = $fromemail;
+    $mail->Password = $password;
+
+    $mail->setFrom($fromemail, $fromname);
+    $mail->addAddress($emailto);
+
+    $mail->isHTML(true);
+    $mail->Subject = $subject;
+    $mail->Body = $bodyemail;
+
+    if (!$mail->send()) {
+        error_log("No se pudo enviar el correo!", );
+    }
+  
+    echo "Correo enviado con éxito!";
+
+} 
+
 ?>
